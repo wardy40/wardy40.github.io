@@ -7,6 +7,6 @@ function toggleRoadmap(obj) {
     } else {
         document.getElementById("roadmap").getElementsByTagName("h3")[0].style.display = "block"
         document.getElementById("roadmap").getElementsByTagName("ul")[0].style.display = "block"
-        obj.innerHTML = "Hide"
+        obj.innerHTML = "Hide roadmap"
     }
 };
