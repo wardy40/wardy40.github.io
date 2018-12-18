@@ -47,21 +47,21 @@ div#constitution {
     clear: both;
 }
 
-div#schedule {
+div#roadmap {
     width: 468px;
     margin: auto;
     font-size: 11px;
 }
 
-div#schedule h3 {
+div#roadmap h3 {
     text-align: center;
 }
 
-div#schedule ul {
+div#roadmap ul {
     margin: 0;
 }
 
-div#hide-schedule {
+div#hide-roadmap {
     text-align: right;
     display: block;
 }
