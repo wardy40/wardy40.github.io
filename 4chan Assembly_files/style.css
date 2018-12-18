@@ -68,6 +68,7 @@ div#hide-roadmap {
 
 div#ctrl-links {
     clear: both;
+    text-align: center;
 }
 
 div.banner {
@@ -102,4 +103,5 @@ div.segment {
     display: table;
     padding: 2px;
     margin: 4px 0;
+    text-align: center;
 }
