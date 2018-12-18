@@ -101,7 +101,17 @@ div.segment {
     border-left: none;
     border-top: none;
     display: table;
+    width: 100%;
     padding: 2px;
-    margin: 4px 0;
+    margin: 4px;
+    align-items: center;
     text-align: center;
+}
+div.copyright {
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 2px;
+    margin: 4px;
 }
