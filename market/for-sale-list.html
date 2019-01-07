@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Memex</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>﻿
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<!-- navigation bar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			
+			<!-- Logo -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">MEMEX LABS</a>
+			</div>
+
+
+			<!-- Menu Items -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../forum.html">Forum</a></li>
+				
+					<!-- drop down menu -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Market <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="for-sale-list.html">For Sale</a></li>
+							<li><a href="wanted-list.html">Wanted</a></li>
+						</ul>
+					</li>
+
+
+				</ul>
+
+				<!-- right align -->
+				<ul class="nav navbar-nav navbar-right">
+					<!-- drop down menu -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="../my-account/data-wallet.html">Data Wallet</a></li>
+							<li><a href="../my-account/token-exchange.html">Token Exchange</a></li>
+							<li><a href="../my-account/settings.html">Settings</a></li>
+							<li><a href="../my-account/logout.html">Logout</a></li>
+						</ul>
+					</li>				
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<div class="container">
+		<h2>Market: For Sale</h2>
+		<div class="dropdown">
+		  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">View
+		  <span class="caret"></span></button>
+		  <ul class="dropdown-menu">
+		    <li class="active"><a href="for-sale-list.html">List</a></li>
+		    <li><a href="for-sale-map.html">Map</a></li>
+		  </ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Date Posted</th>
+					<th>Title</th>
+					<th>Price</th>
+					<th>Location</th>
+					<th>Time of Collection</th>	
+					<th>Frequency</th>		
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Jan 5, 2019</td>
+					<td><a href="#">Drone Footage of Intersection</a></td>
+					<td>40U</td>
+					<td>(Lexington & E. 59th St.)</td>
+					<td>1/1/2019-1/5/2019</td>
+					<td>hourly</td>
+				</tr>
+				<tr>
+					<td>Jan 4, 2019</td>
+					<td><a href="#">My demographic and social data</a></td>
+					<td>1U</td>
+					<td>(12th Avenue & W. 34th St.)</td>
+					<td>1/4/2019</td>
+					<td>once</td>
+				</tr>
+				<tr>
+					<td>Jan 3, 2019</td>
+					<td><a href="#">Eyewitness report of violent assault</a></td>
+					<td>30U</td>
+					<td>(Columbus & W. 127th St.)</td>
+					<td>1/1/2019</td>
+					<td>once</td>
+				</tr>
+				<tr>
+					<td>Jan 2, 2019</td>
+					<td><a href="#">CSV of Bodega29's inventory</a></td>
+					<td>120U</td>
+					<td>(322 West 4th St.)</td>
+					<td>1/1/2018-1/1/2019</td>
+					<td>weekly</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

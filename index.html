@@ -1,111 +1,84 @@
-<!-- Home of the Knowledge Economy -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <link rel="shotcut icon" href="https://wardy40.github.io/site_files/favicon.png">
-  <!-- <link rel="stylesheet" title="text/css" href="https://wardy40.github.io/page_resources/style.css"> -->
-  <link rel="stylesheet" title="text/css" href="./site_files/style.css">
-  <script src="./site_files/papaparse.js"></script>
-  <!-- <script type="text/javascript" src="https://wardy40.github.io/site_files/script.js"></script>  -->
-  <script type="text/javascript" src="./site_files/script.js"></script> 
-  <script type="text/javascript" src="./site_files/parliament.js"></script> 
-  <title>Memex</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Memex</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>﻿
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
-<body onload="loadElements()">
-  <div id="nav">
-    <span>
-      [
-      <a href="https://wardy40.github.io/onboarding" title="Get Started">get started</a>
-      /
-      <a href="https://wardy40.github.io/my_account" title="My Account">my account</a>
-      /
-      <a href="https://wardy40.github.io/marketplace" title="Marketplace">marketplace</a>
-      /
-      <a href="https://wardy40.github.io/research_board" title="Research Board">research board</a>
-      /
-      <a href="https://wardy40.github.io/pdw" title="Personal Data Wallet">personal data wallet</a>
-      ]
-    </span>
-  </div>
-  <div class="banner">
-    <div class="bannerImage" data-src="logo_draft_epsilon2.png">
-      <img alt="Assembly logo" width="200px" height="200px" src="https://wardy40.github.io/site_files/logo_draft_epsilon2.png">
-    </div>
-    <div class="bannerTitle">Memex</div>
-  </div>
-  <hr class="underBanner"/>
-  <div id="constitution">
-      [
-      Coming Soon
-      ]
-  </div>
-  <div id="roadmap">
-    <hr/>
-    <h3>Roadmap</h3>
-    <ul>
-      <li>Marketplace</li>
-      <li>Research</li>
-      <li>Media</li>
-      <li>Advocacy</li>
-    </ul>
-    <div id="hide-roadmap">
-      [
-      <a href="#" onclick="toggleRoadmap(this)" title="Hide roadmap">Hide</a>
-      ]
-    </div>
-    <hr/>
-  </div>
-  <hr/>
-  <div id="ctrl-links">
-    [
-    <a href="https://wardy40.github.io/#about" title="">About</a>
-    ] • [
-    <a href="https://wardy40.github.io/#update_2018-12-18" title="">Update 2018-12-18</a>
-    ] • [
-    <a href="https://wardy40.github.io/#archive_segment" title="">Archive</a>
-    ]
-  </div>
-  <hr/>
-  <div class="segment" id="about">
-    <h1>About</h1>
-    <p>You are not the product, you are the client. Memex makes your information work for you. Help us to build the future of work.</p>
-    
-  </div>
-  <hr/>
-  <div class="segment" id="update_2018-12-18">
-    <h1>Update: 2018-12-18</h1>
-    <p>Currently seeking dreamers. We need your guidance. Please follow this link to help us by answering a few questions about your experience in the knowledge economy:</p>
-    <p>
-    <a href="https://wardy40.github.io/survey_2018-12" title="survey_2018-12">Income & Trust Survey</a>
-    </p>
-  </div>
-<!--future archival footer
-  <hr>
-  <div id="archive_segment">
-    <table id="archive_table">
-      <thead>
-        <tr>
-          <td>Date</td>
-          <td>Excerpt</td>
-          <td>Link</td>
-        </tr>
-      </thead>
-      <tbody id="archive_table_body">
-      </tbody>
-    </table>
-  </div> -->
-  <hr/>
-  <div id="ctrl-links">
-    [
-    <a href="https://wardy40.github.io/#about" title="">About</a>
-    ] • [
-    <a href="https://wardy40.github.io/#update_2018-12-18" title="">Update 2018-12-18</a>
-    ] • [
-    <a href="https://wardy40.github.io/#archive_segment" title="">Archive</a>
-    ]
-    </div>
-    <hr/>
-  <div class="copyright"><a href="/feedback">Feedback</a> &bull; <a href="/legal">Legal</a> &bull; <a href="/contact">Contact</a><br /><br /><br />
-Copyright &copy; 2018 Red Queen Technologies LLC. All rights reserved.
-  </div>
- 
-</body></html>
+<body>
+
+	<!-- navigation bar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			
+			<!-- Logo -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">MEMEX LABS</a>
+			</div>
+
+
+			<!-- Menu Items -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="forum.html">Forum</a></li>
+				
+					<!-- drop down menu -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Market <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="market/for-sale-list.html">For Sale</a></li>
+							<li><a href="market/wanted-list.html">Wanted</a></li>
+						</ul>
+					</li>
+
+
+				</ul>
+
+				<!-- right align -->
+				<ul class="nav navbar-nav navbar-right">
+					<!-- drop down menu -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="my-account/data-wallet.html">Data Wallet</a></li>
+							<li><a href="my-account/token-exchange.html">Token Exchange</a></li>
+							<li><a href="my-account/settings.html">Settings</a></li>
+							<li><a href="my-account/logout.html">Logout</a></li>
+						</ul>
+					</li>				
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<div class="container">
+		<h2>Welcome to Memex Home</h2>
+		
+	</div>
+</body>
+</html>
